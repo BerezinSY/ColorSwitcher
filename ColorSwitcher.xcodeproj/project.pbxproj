@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		25621E86253C247A009EE6E9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25621E85253C247A009EE6E9 /* Colors.swift */; };
+		25621EA9253C3520009EE6E9 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25621EA8253C3520009EE6E9 /* BackgroundView.swift */; };
+		25621EAC253C3605009EE6E9 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25621EAB253C3605009EE6E9 /* ColorView.swift */; };
+		25621EAF253C37FD009EE6E9 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25621EAE253C37FD009EE6E9 /* ButtonView.swift */; };
+		25621EB2253C452F009EE6E9 /* ScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25621EB1253C452F009EE6E9 /* ScreenModel.swift */; };
 		2566889D253AFD6400B65D23 /* ColorSwitcherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2566889C253AFD6400B65D23 /* ColorSwitcherApp.swift */; };
 		256688A1253AFD6500B65D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 256688A0253AFD6500B65D23 /* Assets.xcassets */; };
 		256688A4253AFD6500B65D23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 256688A3253AFD6500B65D23 /* Preview Assets.xcassets */; };
@@ -16,6 +20,10 @@
 
 /* Begin PBXFileReference section */
 		25621E85253C247A009EE6E9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		25621EA8253C3520009EE6E9 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		25621EAB253C3605009EE6E9 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		25621EAE253C37FD009EE6E9 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		25621EB1253C452F009EE6E9 /* ScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenModel.swift; sourceTree = "<group>"; };
 		25668899253AFD6400B65D23 /* ColorSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2566889C253AFD6400B65D23 /* ColorSwitcherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwitcherApp.swift; sourceTree = "<group>"; };
 		256688A0253AFD6500B65D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				25621E85253C247A009EE6E9 /* Colors.swift */,
+				25621EB1253C452F009EE6E9 /* ScreenModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -92,6 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				256688B2253B01E900B65D23 /* MainView.swift */,
+				25621EA8253C3520009EE6E9 /* BackgroundView.swift */,
+				25621EAB253C3605009EE6E9 /* ColorView.swift */,
+				25621EAE253C37FD009EE6E9 /* ButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,8 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2566889D253AFD6400B65D23 /* ColorSwitcherApp.swift in Sources */,
+				25621EB2253C452F009EE6E9 /* ScreenModel.swift in Sources */,
 				25621E86253C247A009EE6E9 /* Colors.swift in Sources */,
+				25621EAF253C37FD009EE6E9 /* ButtonView.swift in Sources */,
+				25621EA9253C3520009EE6E9 /* BackgroundView.swift in Sources */,
 				256688B3253B01E900B65D23 /* MainView.swift in Sources */,
+				25621EAC253C3605009EE6E9 /* ColorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

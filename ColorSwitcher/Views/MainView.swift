@@ -9,65 +9,53 @@ import SwiftUI
 
 struct MainView: View {
     
-    private let screenWidth = UIScreen.main.bounds.width
-    private let screenHeight = UIScreen.main.bounds.height
-    
-    @State private var title = "Start"
     @State private var color: Colors = .red
-    
-    @State private var red = 0.9
-    @State private var yellow = 0.9
-    @State private var green = 0.9
+    @State var model = ScreenModel()
     
     private let dark = 0.9
     private let light = 0.0
     
+    private let screenHeight = UIScreen.main.bounds.height
     
     var body: some View {
         ZStack {
-            Color(.darkGray)
-                .edgesIgnoringSafeArea(.all)
+            BackgroundView(color: .darkGray)
             VStack(spacing: screenHeight / 10) {
                 VStack(spacing: 16) {
-                    Color(.systemRed)
-                        .frame(width: screenWidth / 2.5, height: screenWidth / 2.5, alignment: .center )
-                        .clipShape(Circle())
-                        .grayscale(red)
-                    Color(.systemYellow)
-                        .frame(width: screenWidth / 2.5, height: screenWidth / 2.5, alignment: .center )
-                        .clipShape(Circle())
-                        .grayscale(yellow)
-                    Color(.systemGreen)
-                        .frame(width: screenWidth / 2.5, height: screenWidth / 2.5, alignment: .center )
-                        .clipShape(Circle())
-                        .grayscale(green)
+                    ColorView(color: .systemRed, grayScale: model.red, size: 2.5)
+                    ColorView(color: .systemYellow, grayScale: model.yellow, size: 2.5)
+                    ColorView(color: .systemGreen, grayScale: model.green, size: 2.5)
                 }
-                Button(title) { pressStart() }
-                    .frame(width: screenWidth / 2, height: screenWidth / 8)
-                    .font(.title)
-                    .background(Color(.systemBlue))
-                    .cornerRadius(screenWidth / 35)
-                    .foregroundColor(.white)
+                ButtonView(title: model.buttonTitle,
+                           background: .systemBlue,
+                           textColor: .white,
+                           width: 2,
+                           height: 8,
+                           action: pressStart)
             }
         }
     }
     
-    func pressStart() {
-        title = "Next"
+    private func pressStart() {
+        
+        model.buttonTitle = "Next"
         switch color {
+        
         case .red:
-            red = light
-            green = dark
             color = .yellow
+            model.red = light
+            model.green = dark
         case .yellow:
-            yellow = light
-            red = dark
             color = .green
+            model.yellow = light
+            model.red = dark
         case .green:
-            green = light
-            yellow = dark
             color = .red
+            model.green = light
+            model.yellow = dark
         }
+        
+        
     }
 }
 
