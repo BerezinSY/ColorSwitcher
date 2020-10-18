@@ -35,6 +35,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25621E89253C25D0009EE6E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25621E85253C247A009EE6E9 /* Colors.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25621E8A253C25F0009EE6E9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2566889C253AFD6400B65D23 /* ColorSwitcherApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		25668890253AFD6400B65D23 = {
 			isa = PBXGroup;
 			children = (
@@ -54,7 +70,8 @@
 		2566889B253AFD6400B65D23 /* ColorSwitcher */ = {
 			isa = PBXGroup;
 			children = (
-				2566889C253AFD6400B65D23 /* ColorSwitcherApp.swift */,
+				25621E8A253C25F0009EE6E9 /* Application */,
+				25621E89253C25D0009EE6E9 /* Models */,
 				256688CD253B471D00B65D23 /* Views */,
 				256688A0253AFD6500B65D23 /* Assets.xcassets */,
 				256688A5253AFD6500B65D23 /* Info.plist */,
@@ -75,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				256688B2253B01E900B65D23 /* MainView.swift */,
-				25621E85253C247A009EE6E9 /* Colors.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
